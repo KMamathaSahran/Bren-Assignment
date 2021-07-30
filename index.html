@@ -89,7 +89,7 @@
 			   
 		
 			   <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
-			   <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+			   <li class="nav-item"><a class="nav-link" href="http://localhost:8080/task/admin.php">Admin</a></li>
 			</ul>
 
 			<form class="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
@@ -628,28 +628,18 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12 col-sm-12">
-					 <form id="contact-form" class="contact__form" method="post" action="admin.html">
-					 <!-- form message -->
-						<div class="row">
-							<div class="col-12">
-								<div class="alert alert-success contact__msg" style="display: none" role="alert">
-									Your message was sent successfully.
-								</div>
-							</div>
-						</div>
-						<!-- end message -->
-						<span class="text-color">Send a message</span>
+					 <form id="contact-form"  method="post" action="process.php">
 						<h3 class="text-md mb-4">Contact Form</h3>
 						<div class="form-group">
-							<input name="name" type="text" class="form-control" placeholder="Your Name">
+							<input name="first_name" class="form-control"  type="text"  placeholder="Your Name">
 						</div>
 						<div class="form-group">
-							<input name="email" type="email" class="form-control" placeholder="Email Address">
+							<input name="email_id" class="form-control"  type="email"  placeholder="Email Address">
 						</div>
 						<div class="form-group-2 mb-4">
-							<textarea name="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+							<textarea name="text_message"  rows="4" placeholder="Your Message"></textarea>
 						</div>
-						<button class="btn btn-main" name="submit" type="submit">Send Message</button>
+						<input class="btn btn-main" name="save" value="submit" type="submit"/>
 					</form>
 				</div>
 	
